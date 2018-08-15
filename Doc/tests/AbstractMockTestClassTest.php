@@ -55,16 +55,4 @@ class AbstractMockTestClassTest extends TestCase
         ];
     }
 
-    private function arrays_are_similar($a, $b) {
-        if (count(array_diff_assoc($a, $b))) {
-            return false;
-        }
-        foreach($a as $k => $v) {
-            if ($v !== $b[$k]) {
-                return false;
-            }
-        }
-        return true;
-    }
-
 }
